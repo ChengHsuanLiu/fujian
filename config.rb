@@ -36,7 +36,7 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
-  activate :asset_host, :host => '//chenghsuango.github.com/fujian'
+  activate :asset_host, :host => '//chenghsuanliu.github.io/fujian'
 end
 
 activate :deploy do |deploy|
