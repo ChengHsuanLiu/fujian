@@ -6,7 +6,7 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title><%= current_page.data.title || "皓天生技 - 台灣極品牛樟芝" %></title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
@@ -15,6 +15,21 @@
   </head>
 
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <header>
+      <%= partial 'partials/nav' %>
+    </header>
+    <div class="container wrapper hide-temp">
+      <div class="col-md-2">
+
+      </div>
+      <div class="col-md-10">
+        <%= yield %>
+      </div>
+    </div>
+    <footer>
+      <%= javascript_include_tag :main %>
+    </footer>
+    <div class="mei-hua hide-temp"></div>
+    <div class="ruby-1 hide-temp"></div>
   </body>
 </html>
