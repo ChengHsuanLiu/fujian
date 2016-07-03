@@ -36,4 +36,13 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
+  activate :asset_host, :host => '//chenghsuango.github.com/fujian'
 end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'gh-pages'
+  deploy.build_before = true
+end
+
+activate :directory_indexes
