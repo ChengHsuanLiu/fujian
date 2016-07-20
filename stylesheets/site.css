@@ -8063,7 +8063,7 @@ body.lb-disable-scrolling {
 body {
   font-family: "微軟正黑體";
   font-size: 2.4em;
-  background-image: url("//chenghsuanliu.github.io/fujian/images/body-bg.jpg");
+  background-image: url("http://www.haotien.com.tw/images/body-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative; }
@@ -8133,7 +8133,7 @@ a:active, a:hover {
 /* line 89, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .main-navbar .navbar-nav {
   margin-top: 80px;
-  background-image: url("//chenghsuanliu.github.io/fujian/images/straw-black.png");
+  background-image: url("http://www.haotien.com.tw/images/straw-black.png");
   background-repeat: no-repeat;
   background-size: 102% auto;
   background-position: center;
@@ -8247,7 +8247,7 @@ a:active, a:hover {
   left: 0;
   width: 45px;
   height: 45px;
-  background-image: url("//chenghsuanliu.github.io/fujian/images/gold-badge.png");
+  background-image: url("http://www.haotien.com.tw/images/gold-badge.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center;
