@@ -3,7 +3,8 @@
 @import "variables";
 @import "bootstrap";
 @import "bootswatch";
-@import "lightbox";
+@import "owl.carousel.css";
+@import "owl.theme.css";
 
 
 body {
@@ -335,6 +336,129 @@ a:active, a:hover{
     background: #d1ab66;
     text-align: center;
     padding: 4px;
+  }
+}
+
+.report-img{
+  position: relative;
+  display: block;
+
+  &:hover > .report-img-mask{
+    opacity: 1;
+  }
+
+  > .report-img-mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    opacity: 0;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -ms-transition: all .4s;
+
+    > p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      z-index: 50;
+      color: #FFF;
+      font-size: 24px;
+    }
+  }
+}
+
+.contact-now-btn{
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  font-size: 24px;
+  padding: 12px 24px;
+  color: #FFF;
+  background-color: #d2ab67;
+  border-radius: 8px;
+  z-index: 10001;
+
+  &:hover{
+    color: #FFF;
+    opacity: .8;
+  }
+}
+
+.facebook-fans-block{
+  position: fixed;
+  left: -280px;
+  top: 50%;
+  width: 280px;
+  height: 180px;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  opacity: .8;
+  z-index: 1000000;
+
+  > .facebook-btn{
+    color: #FFF;
+    padding: 8px 20px;
+    border-radius: 0 8px 8px 0;
+    background-color: #3b5998;
+    position: absolute;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    text-align: center;
+    font-size: 18px;
+
+    > .ion-social-facebook{
+      color: #FFF;
+    }
+  }
+}
+
+.facebook-fans-block:hover{
+  transform: translate(280px, -50%);
+  -webkit-transform: translate(280px, -50%);
+  -moz-transform: translate(280px, -50%);
+  -ms-transform: translate(280px, -50%);
+  -o-transform: translate(280px, -50%);
+  opacity: 1;
+}
+
+.slide-item{
+  > img{
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px){
+  #home-slider{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 992px){
+  #home-slider{
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 120px;
   }
 }
 

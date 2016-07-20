@@ -1,3 +1,24 @@
 ---
 title: '皓天生技 - 台灣極品牛樟芝'
 ---
+
+<div id="home-slider" class="owl-carousel">
+  <div class="slide-item"><%= image_tag('slide/1.jpg') %></div>
+  <div class="slide-item"><%= image_tag('slide/2.jpg') %></div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	  $("#home-slider").owlCarousel({
+	  	navigation : false,
+	  	singleItem:true,
+	  	slideSpeed : 300,
+	  	autoPlay: true,
+	  	pagination: false,
+
+
+	  });
+
+	});
+</script>
