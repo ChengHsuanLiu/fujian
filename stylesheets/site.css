@@ -5,6 +5,8 @@
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700");
+@import url(owl.carousel.css);
+@import url(owl.theme.css);
 /* line 9, /Users/Lucas/Project/fujian/source/stylesheets/_normalize.scss */
 html {
   font-family: sans-serif;
@@ -7852,214 +7854,7 @@ a.list-group-item-danger.active:hover, a.list-group-item-danger.active:focus {
 .popover {
   color: #333333; }
 
-/* Preload images */
-/* line 3, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-body:after {
-  content: url(../images/close.png) url(../images/loading.gif) url(../images/prev.png) url(../images/next.png);
-  display: none; }
-
-/* line 8, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-body.lb-disable-scrolling {
-  overflow: hidden; }
-
-/* line 12, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lightboxOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  background-color: black;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
-  opacity: 0.8;
-  display: none; }
-
-/* line 23, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lightbox {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: 10000;
-  text-align: center;
-  line-height: 0;
-  font-weight: normal; }
-
-/* line 33, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lightbox .lb-image {
-  display: block;
-  height: auto;
-  max-width: inherit;
-  border-radius: 3px; }
-
-/* line 40, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lightbox a img {
-  border: none; }
-
-/* line 44, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-outerContainer {
-  position: relative;
-  background-color: white;
-  *zoom: 1;
-  width: 250px;
-  height: 250px;
-  margin: 0 auto;
-  border-radius: 4px; }
-
-/* line 54, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-outerContainer:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/* line 60, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-container {
-  padding: 4px; }
-
-/* line 64, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-loader {
-  position: absolute;
-  top: 43%;
-  left: 0;
-  height: 25%;
-  width: 100%;
-  text-align: center;
-  line-height: 0; }
-
-/* line 74, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-cancel {
-  display: block;
-  width: 32px;
-  height: 32px;
-  margin: 0 auto;
-  background: url(../images/loading.gif) no-repeat; }
-
-/* line 82, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10; }
-
-/* line 91, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-container > .nav {
-  left: 0; }
-
-/* line 95, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-nav a {
-  outline: none;
-  background-image: url("data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="); }
-
-/* line 100, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-prev, .lb-next {
-  height: 100%;
-  cursor: pointer;
-  display: block; }
-
-/* line 106, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-nav a.lb-prev {
-  width: 34%;
-  left: 0;
-  float: left;
-  background: url(../images/prev.png) left 48% no-repeat;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
-  transition: opacity 0.6s; }
-
-/* line 119, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-nav a.lb-prev:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1; }
-
-/* line 124, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-nav a.lb-next {
-  width: 64%;
-  right: 0;
-  float: right;
-  background: url(../images/next.png) right 48% no-repeat;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-  opacity: 0;
-  -webkit-transition: opacity 0.6s;
-  -moz-transition: opacity 0.6s;
-  -o-transition: opacity 0.6s;
-  transition: opacity 0.6s; }
-
-/* line 137, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-nav a.lb-next:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1; }
-
-/* line 142, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-dataContainer {
-  margin: 0 auto;
-  padding-top: 5px;
-  *zoom: 1;
-  width: 100%;
-  -moz-border-radius-bottomleft: 4px;
-  -webkit-border-bottom-left-radius: 4px;
-  border-bottom-left-radius: 4px;
-  -moz-border-radius-bottomright: 4px;
-  -webkit-border-bottom-right-radius: 4px;
-  border-bottom-right-radius: 4px; }
-
-/* line 155, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-dataContainer:after {
-  content: "";
-  display: table;
-  clear: both; }
-
-/* line 161, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-data {
-  padding: 0 4px;
-  color: #ccc; }
-
-/* line 166, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-data .lb-details {
-  width: 85%;
-  float: left;
-  text-align: left;
-  line-height: 1.1em; }
-
-/* line 173, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-data .lb-caption {
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1em; }
-
-/* line 179, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-data .lb-number {
-  display: block;
-  clear: left;
-  padding-bottom: 1em;
-  font-size: 12px;
-  color: #999999; }
-
-/* line 187, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-data .lb-close {
-  display: block;
-  float: right;
-  width: 30px;
-  height: 30px;
-  background: url(../images/close.png) top right no-repeat;
-  text-align: right;
-  outline: none;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
-  opacity: 0.7;
-  -webkit-transition: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  transition: opacity 0.2s; }
-
-/* line 203, /Users/Lucas/Project/fujian/source/stylesheets/lightbox.css.scss */
-.lb-data .lb-close:hover {
-  cursor: pointer;
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-  opacity: 1; }
-
-/* line 9, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 10, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 body {
   font-family: "微軟正黑體";
   font-size: 2.4em;
@@ -8068,12 +7863,12 @@ body {
   background-attachment: fixed;
   position: relative; }
 
-/* line 18, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 19, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 p {
   letter-spacing: 1px;
   line-height: 1.6em; }
 
-/* line 23, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 24, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .mei-hua {
   width: 500px;
   height: 500px;
@@ -8087,7 +7882,7 @@ p {
   top: 0%;
   z-index: 1; }
 
-/* line 42, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 43, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .ruby-1 {
   width: 30%;
   height: 1000px;
@@ -8102,35 +7897,35 @@ p {
   z-index: 1;
   opacity: .8; }
 
-/* line 58, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 59, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .wrapper {
   position: relative;
   z-index: 2;
   max-width: 88% !important; }
 
-/* line 64, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 65, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 a {
   color: #2f2f2f; }
 
-/* line 68, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 69, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 a:active, a:hover {
   color: #d2ab66; }
 
-/* line 72, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 73, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .hide-temp {
   display: none; }
 
-/* line 77, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 78, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .navbar {
   z-index: 999; }
 
-/* line 82, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 83, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .main-navbar .navbar-brand {
   height: auto; }
-/* line 86, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 87, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .main-navbar .navbar-brand > img {
   width: 300px; }
-/* line 89, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 90, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .main-navbar .navbar-nav {
   margin-top: 80px;
   background-image: url("http://www.haotien.com.tw/images/straw-black.png");
@@ -8140,24 +7935,24 @@ a:active, a:hover {
   padding: 0 60px; }
 
 @media (min-width: 992px) {
-  /* line 101, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 102, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .main-body {
     width: 91% !important; }
 
-  /* line 105, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 106, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .dropdown-menu {
     box-shadow: none !important;
     border: 0 !important; }
 
-  /* line 110, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 111, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .dropdown:hover .dropdown-menu {
     display: block; }
 
-  /* line 114, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 115, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .dropdown-menu > li > a {
     padding: 10px 20px;
     font-size: 18px; } }
-/* line 121, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 122, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .hide-navbar {
   position: fixed;
   width: 100%;
@@ -8170,34 +7965,34 @@ a:active, a:hover {
   -moz-transition: all .3s;
   -o-transition: all .3s;
   -ms-transition: all .3s; }
-  /* line 134, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 135, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .hide-navbar.in-show {
     transform: translate(0, 150px);
     -webkit-transform: translate(0, 150px);
     -moz-transform: translate(0, 150px);
     -o-transform: translate(0, 150px);
     -ms-transform: translate(0, 150px); }
-  /* line 142, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 143, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .hide-navbar .navbar-brand {
     padding: 4px 16px; }
-    /* line 145, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+    /* line 146, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
     .hide-navbar .navbar-brand img {
       height: 40px; }
 
 @media (max-width: 992px) {
-  /* line 153, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 154, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .main-navbar {
     display: none !important; }
 
-  /* line 157, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 158, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .navbar-nav > li > a {
     padding-top: 12px !important;
     padding-bottom: 12px !important; }
 
-  /* line 162, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 163, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .hide-navbar {
     top: 0 !important; }
-    /* line 165, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+    /* line 166, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
     .hide-navbar.in-show {
       transform: translate(0, 0) !important;
       -webkit-transform: translate(0, 0) !important;
@@ -8205,42 +8000,42 @@ a:active, a:hover {
       -o-transform: translate(0, 0) !important;
       -ms-transform: translate(0, 0) !important; }
 
-  /* line 175, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 176, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .dropdown.open .dropdown-toggle {
     color: #282828;
     background-color: #FFF !important; }
-  /* line 180, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 181, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .dropdown.open .dropdown-menu > li > a {
     color: #d1ab66;
     font-size: 18px;
     padding: 8px 15px 8px 25px !important; } }
-/* line 188, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 189, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .navbar-toggle .icon-bar {
   background-color: #FFF;
   width: 28px !important; }
 
-/* line 194, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 195, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .nav > li > a:hover, .nav > li > a:focus {
   background-color: transparent !important;
   color: #d2ab67; }
 
-/* line 201, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 202, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .navbar-nav a {
   color: #FFF; }
 
-/* line 205, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 206, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .page-content {
   padding: 24px 24px 80px 24px;
   background: rgba(255, 255, 255, 0.5); }
 
-/* line 210, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 211, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .page-title {
   color: #9e2f22;
   font-weight: 700;
   position: relative;
   padding-left: 60px; }
 
-/* line 217, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 218, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .page-title::before {
   position: absolute;
   top: 50%;
@@ -8258,71 +8053,71 @@ a:active, a:hover {
   -ms-transform: translate(0, -50%);
   content: ''; }
 
-/* line 235, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 236, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .hr {
   width: 100%;
   height: 1px;
   background: #c1c1c1;
   margin: 12px 0 24px 0; }
 
-/* line 242, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 243, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .thumbnail {
   width: 100%;
   height: auto; }
 
-/* line 247, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 248, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .no-padding {
   padding: 0; }
 
-/* line 253, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 254, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .margin-top-l {
   margin-top: 48px; }
 
-/* line 256, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 257, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .margin-top-m {
   margin-top: 24px; }
 
-/* line 259, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 260, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .margin-top-s {
   margin-top: 8px; }
 
-/* line 262, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 263, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .margin-bottom-l {
   margin-bottom: 48px; }
 
-/* line 265, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 266, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .margin-bottom-m {
   margin-bottom: 24px; }
 
-/* line 268, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 269, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .margin-bottom-s {
   margin-bottom: 8px; }
 
-/* line 272, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 273, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .padding-top-l {
   padding-top: 48px; }
 
-/* line 275, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 276, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .padding-top-m {
   padding-top: 24px; }
 
-/* line 278, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 279, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .padding-top-s {
   padding-top: 8px; }
 
-/* line 281, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 282, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .padding-bottom-l {
   padding-bottom: 48px; }
 
-/* line 284, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 285, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .padding-bottom-m {
   padding-bottom: 24px; }
 
-/* line 287, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 288, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .padding-bottom-s {
   padding-bottom: 8px; }
 
-/* line 292, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 293, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .footer {
   background: #000;
   color: #FFF;
@@ -8331,30 +8126,30 @@ a:active, a:hover {
   padding: 12px 0;
   font-size: 16px;
   margin-top: 60px; }
-  /* line 302, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 303, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .footer .footer-info p {
     display: inline-block;
     margin-right: 24px;
     margin-bottom: 0; }
-    /* line 307, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+    /* line 308, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
     .footer .footer-info p span {
       display: inline-block;
       color: #d2ab67;
       margin-right: 12px; }
-  /* line 315, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 316, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .footer .copy-right {
     color: #d2ab67; }
 
-/* line 320, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 321, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .contact-info {
   padding: 24px; }
 
-/* line 325, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 326, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .contact-info-item p {
   display: inline-block;
   font-size: 20px;
   font-weight: 700; }
-/* line 331, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+/* line 332, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
 .contact-info-item .title {
   margin-right: 24px;
   min-width: 100px;
@@ -8363,6 +8158,117 @@ a:active, a:hover {
   text-align: center;
   padding: 4px; }
 
+/* line 342, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+.report-img {
+  position: relative;
+  display: block; }
+  /* line 346, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  .report-img:hover > .report-img-mask {
+    opacity: 1; }
+  /* line 350, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  .report-img > .report-img-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -o-transition: all .4s;
+    -ms-transition: all .4s; }
+    /* line 364, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+    .report-img > .report-img-mask > p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      z-index: 50;
+      color: #FFF;
+      font-size: 24px; }
+
+/* line 380, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+.contact-now-btn {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  font-size: 24px;
+  padding: 12px 24px;
+  color: #FFF;
+  background-color: #d2ab67;
+  border-radius: 8px;
+  z-index: 10001; }
+  /* line 391, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  .contact-now-btn:hover {
+    color: #FFF;
+    opacity: .8; }
+
+/* line 397, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+.facebook-fans-block {
+  position: fixed;
+  left: -280px;
+  top: 50%;
+  width: 280px;
+  height: 180px;
+  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transition: all .4s;
+  -webkit-transition: all .4s;
+  -moz-transition: all .4s;
+  -o-transition: all .4s;
+  -ms-transition: all .4s;
+  opacity: .8;
+  z-index: 1000000; }
+  /* line 416, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  .facebook-fans-block > .facebook-btn {
+    color: #FFF;
+    padding: 8px 20px;
+    border-radius: 0 8px 8px 0;
+    background-color: #3b5998;
+    position: absolute;
+    height: 100%;
+    left: 100%;
+    top: 0;
+    text-align: center;
+    font-size: 18px; }
+    /* line 428, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+    .facebook-fans-block > .facebook-btn > .ion-social-facebook {
+      color: #FFF; }
+
+/* line 434, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+.facebook-fans-block:hover {
+  transform: translate(280px, -50%);
+  -webkit-transform: translate(280px, -50%);
+  -moz-transform: translate(280px, -50%);
+  -ms-transform: translate(280px, -50%);
+  -o-transform: translate(280px, -50%);
+  opacity: 1; }
+
+/* line 444, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+.slide-item > img {
+  width: 100%; }
+
+@media (min-width: 992px) {
+  /* line 450, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  #home-slider {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: -60px; } }
+@media (max-width: 992px) {
+  /* line 458, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  #home-slider {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 120px; } }
 @-webkit-keyframes welcome {
   from {
     -webkit-transform: scale(0);
