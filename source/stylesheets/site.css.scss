@@ -60,6 +60,7 @@ p{
   position: relative;
   z-index: 2;
   max-width: 88% !important;
+  margin-bottom: 80px;
 }
 
 a {
@@ -297,7 +298,13 @@ a:active, a:hover{
   z-index: 111;
   padding: 12px 0;
   font-size: 16px;
-  margin-top: 60px;
+
+  &.fix-footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
 
   .footer-info{
     p{
@@ -380,7 +387,7 @@ a:active, a:hover{
 .contact-now-btn{
   position: fixed;
   right: 40px;
-  bottom: 40px;
+  bottom: 80px;
   font-size: 24px;
   padding: 12px 24px;
   color: #FFF;
