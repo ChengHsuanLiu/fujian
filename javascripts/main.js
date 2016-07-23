@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	check_footer_position();
+
 	setTimeout(function(){
 		fade_action($('.navbar-brand'));
 	}, 100);
@@ -27,6 +29,17 @@ $(document).ready(function(){
 		$(ele).fadeIn(1000);
 	};
 
+	function check_footer_position(){
+		var full_height = $(window).height();
+		var body_height = $('body').height();
+
+		if(full_height > body_height){
+			$('.footer').addClass('fix-footer');
+		}else{
+			$('.footer').removeClass('fix-footer');
+		}
+	}
+
 
 	$(window).scroll(function(){
 		if($(window).scrollTop() > 150){
@@ -34,6 +47,10 @@ $(document).ready(function(){
 		}else{
 			$('.hide-navbar').removeClass('in-show');
 		}
+	})
+
+	$(window).resize(function(){
+		check_footer_position();
 	})
 })
 
