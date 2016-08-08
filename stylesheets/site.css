@@ -8286,15 +8286,15 @@ a:active, a:hover {
 @media (min-width: 992px) {
   /* line 479, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   #home-slider {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
-    margin-top: -60px; } }
+    margin-top: -80px; } }
 @media (max-width: 992px) {
   /* line 487, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   #home-slider {
-    max-width: 900px;
+    max-width: 700px;
     margin: 0 auto;
-    margin-top: 120px; }
+    margin-top: 24px; }
 
   /* line 493, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .footer .footer-info p span {
@@ -8320,7 +8320,7 @@ a:active, a:hover {
   .main-body {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 80px; }
+    padding-top: 60px; }
 
   /* line 519, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .facebook-fans-block {
@@ -8328,11 +8328,17 @@ a:active, a:hover {
 
   /* line 523, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .sub-footer {
-    display: block; }
+    display: block;
+    margin-bottom: 80px;
+    margin-top: -24px; }
 
-  /* line 527, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  /* line 529, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
   .page-title {
-    font-size: 30px; } }
+    font-size: 30px; }
+
+  /* line 533, /Users/Lucas/Project/fujian/source/stylesheets/site.css.scss */
+  .wrapper {
+    margin-bottom: 24px; } }
 @-webkit-keyframes welcome {
   from {
     -webkit-transform: scale(0);
